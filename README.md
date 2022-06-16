@@ -9,3 +9,5 @@ todos esses são meus exercicios:
  <a href="https://gustavocarvalhorodrigues.github.io/html-css/modulo 1/exercicios/ex001/index.html">Executar o exercicio 001</a>
 
  <a href="https://gustavocarvalhorodrigues.github.io/html-css/modulo 1/exercicios/ex002/index.html">Executar o exercicio 002
+
+ <a href="https://gustavocarvalhorodrigues.github.io/html-css/modulo 1/exercicios/ex003/index.html">Executar o exercicio 003
