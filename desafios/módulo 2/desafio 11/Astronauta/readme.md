@@ -3,4 +3,4 @@
 Esse foi criado para testar minha habilidade de posicionamento com as
 imagens
 
-<a herf="https://gustavocarvalhorodrigues.github.io/html-css/desafios/módulo 2/desafio 11/Astronauta">Executar desafio astronauta</a>
+<a herf="https://gustavocarvalhorodrigues.github.io/html-css/desafios/módulo 2/desafio 11/Astronauta/index.html">Executar desafio astronauta</a>
