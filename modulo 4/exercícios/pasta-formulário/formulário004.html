@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    div{
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <h1>Exemplo de Formulário</h1>
+   <form action="cadastro.php" method="post">
+    <fieldset>
+        <legend>Formulário de dados</legend>
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" minlength="5" maxlength="30" placeholder="Nome completo" size="10" autocomplete="name">
+        </div>
+        <div>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" minlength="8" maxlength="16" placeholder="Senha" size="12" autocomplete="current-password">
+        </div>
+    </fieldset>
+    <div>
+        <label for="imedia">Media da Prova</label>
+        <input type="number" name="media" id="imedia"  
+        min="0" max="10" placeholder="0 a 10" value="7" step="0.1" autocomplete="cc-number">
+    </div>
+    <div>
+        <label for="imes">Período Letivo</label>
+        <input type="month" name="mes" id="imes" placeholder="2022-08">
+    </div>
+    <div>
+        <label for="idia">Dia da Prova</label>
+        <input type="date" name="dia" id="idia" placeholder="2022-08-29">
+    </div>
+    <div>
+        <label for="ihora">Horário da Prova</label>
+        <input type="time" name="hora" id="ihora">
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+   </form>
+</body>
+</html>
