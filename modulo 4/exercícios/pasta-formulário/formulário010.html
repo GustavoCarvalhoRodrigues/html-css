@@ -5,34 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <style>
-        div{
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Exemplo de formulário</h1>
+    <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
 
         <div>
-            <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor" value="#00ff00">
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="2001" max="2022" oninput="calcIdade()">
         </div>
 
         <div>
-            <label for="inivel">Nível de Satisfação:</label>
-            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">1</output>
         </div>
-        <div>
-            <label for="ifoto">Foto:</label>
-            <input type="file" name="foto" id="ifoto">
-        </div>
-
         <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </div>
-</form>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>

@@ -7,32 +7,29 @@
     <title>Formulário</title>
     <style>
         div{
-            margin-top: 10px;
+            margin-top: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>Exemplo de formulário</h1>
+    <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-
         <div>
-            <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor" value="#00ff00">
-        </div>
-
-        <div>
-            <label for="inivel">Nível de Satisfação:</label>
-            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </div>
         <div>
-            <label for="ifoto">Foto:</label>
-            <input type="file" name="foto" id="ifoto">
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </div>
-
+        <div>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
         <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </div>
-</form>
+    </form>
 </body>
 </html>
