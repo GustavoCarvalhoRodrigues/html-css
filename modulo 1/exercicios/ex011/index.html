@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mídias em HTML5</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Imagem dinâmica</h1>
-    <p>Tente abrir esse site em vários dispositivos diferentes eu simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente e diminua o tamanho do meu navegador.
+    </p>
     <picture>
-    <source media="(min-width: 480px)" srcset="imagens/ImagemP.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/ImagemM.png" type="image/png">
-        <img src="imagens/ImagemG.png" alt="Imagem flexível">
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m.png"
+        type="image/png"
+      />
+      <img src="imagens/foto-g.png" alt="imagem grande" />
     </picture>
-    <h1>Reproduzindo Áudio</h1>
-    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
-    <audio src="midia/As You Fade Away - NEFFEX.mp3" autoplay></audio>
-    <!--formatos de áudio MP3-WAV-OGG-->
-    <audio preload="metadata" autoplay controls>
-        <source src="midia/As You Fade Away - NEFFEX.mp3" type="audio/mpeg">
-        <source src="midia/As You Fade Away - NEFFEX.ogg" type="audio/ogg">
-        <source src="midia/As You Fade Away - NEFFEX.wav" type="audio/wav">
-        <p>Infelizmente seu navegador não consegui reproduzir áudio.
-            <a href="midia/As You Fade Away - NEFFEX.mp3">clique aqui para baixar o arquivo MP3</a>
-        </p>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls autoplay loop>
+      <source src="midia/guanacast-33.mp3" type="audio/mpeg" />
+      <source src="midia/guanacast-33.ogg" type="audio/ogg" />
+      <source src="midia/guanacast-33.mp3" type="audio/wav" />
+      <!-- Tente evitar arquivo WAV porquê são muitos pesados -->
+      <p>infelizmente seu navegador não consegue reproduzir áudio.</p>
+      <p>
+        <a href="midia/guanacast-33.mp3">Clique para baixar arquivo MP3.</a>
+      </p>
     </audio>
-</body>
+    <!-- Formatos áudio: MP3, wav, OGG -->
+  </body>
 </html>
