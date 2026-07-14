@@ -1,2 +1,2 @@
 # html-css
-Curso de HTML e CSS de 5 módulos
+Curso de HTML e CSS com 5 módulos
